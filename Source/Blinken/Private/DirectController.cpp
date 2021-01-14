@@ -1,7 +1,8 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
-#include "BlinkenPrivatePCH.h"
 #include "DirectController.h"
+#include "BlinkenPrivatePCH.h"
+
 
 #define CHANGE_FREQUENCY 0.05f
 

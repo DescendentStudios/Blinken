@@ -1,7 +1,7 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
-#include "BlinkenPrivatePCH.h"
 #include "BaseController.h"
+#include "BlinkenPrivatePCH.h"
 
 
 FBaseController::FBaseController()

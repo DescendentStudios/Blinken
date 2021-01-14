@@ -4,7 +4,6 @@
 
 #include <vector>
 
-#include "ModuleManager.h"
 #include "Tickable.h"
 
 class FBaseController;

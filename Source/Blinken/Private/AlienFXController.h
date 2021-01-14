@@ -4,9 +4,7 @@
 #include "DirectController.h"
 
 #if PLATFORM_WINDOWS
-#include "AllowWindowsPlatformTypes.h"
 #include "LFX2.h"
-#include "HideWindowsPlatformTypes.h"
 #endif
 
 class FAlienFXController : public FDirectController

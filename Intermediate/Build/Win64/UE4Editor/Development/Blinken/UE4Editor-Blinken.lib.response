@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Blinken.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\Users\Bobby\Documents\My Unreal Projects\MyProject_425\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\Users\Bobby\Documents\My Unreal Projects\MyProject_425\Plugins\BlinkenPlugin\Intermediate\Build\Win64\UE4Editor\Development\Blinken\Module.Blinken.cpp.obj"
+"E:\Users\Bobby\Documents\My Unreal Projects\MyProject_425\Plugins\BlinkenPlugin\Intermediate\Build\Win64\UE4Editor\Development\Blinken\Module.Blinken.gen.cpp.obj"
+"E:\Users\Bobby\Documents\My Unreal Projects\MyProject_425\Plugins\BlinkenPlugin\Intermediate\Build\Win64\UE4Editor\Development\Blinken\Default.rc2.res"
+/OUT:"E:\Users\Bobby\Documents\My Unreal Projects\MyProject_425\Plugins\BlinkenPlugin\Intermediate\Build\Win64\UE4Editor\Development\Blinken\UE4Editor-Blinken.lib"
+/INCLUDE:IMPLEMENT_MODULE_Blinken

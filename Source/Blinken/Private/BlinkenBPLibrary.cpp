@@ -1,8 +1,8 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
+#include "BlinkenBPLibrary.h"
 #include "BlinkenPrivatePCH.h"
 #include "Blinken.h"
-#include "BlinkenBPLibrary.h"
 
 UBlinkenBPLibrary::UBlinkenBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)

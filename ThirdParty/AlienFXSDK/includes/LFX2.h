@@ -201,6 +201,7 @@ Returns:
 	LFX_SUCCESS otherwise.
 *********************************************************/
 FN_DECLSPEC LFX_RESULT STDCALL LFX_GetLightLocation(const unsigned int, const unsigned int, PLFX_POSITION const);
+FN_DECLSPEC LFX_RESULT STDCALL LFX_GetLightLocationMask(const unsigned int, const unsigned int, unsigned int*);
 
 /*********************************************************
 Function: LFX_GetLightColor
@@ -388,6 +389,25 @@ Returns:
 *********************************************************/
 FN_DECLSPEC LFX_RESULT STDCALL LFX_GetVersion(char* const, const unsigned int);
 
+/*********************************************************
+Function: LFX_SetActionDuration
+Description:
+	Sets the duration for actions.
+Important: 
+	This function changes the current duration to be used for the 
+	next actions. It does NOT immediately update the physical light
+	settings, until a call to LFX_Update() is made.
+Timing Note: 
+	Is a value between 0.2 and 3.0 seconds allowed for the main device.
+	If a value lower than min or a value greather than max is entered,
+	the value is readjusted to those extremes.
+Inputs:	Accepts a 32-bit timing value
+Outputs: None
+Returns: 
+	LFX_FAILURE if changing duration is not supported or LFX_SUCCESS otherwise.
+*********************************************************/
+FN_DECLSPEC LFX_RESULT STDCALL LFX_SetActionDuration(const double);
+
 #ifdef __cplusplus
 } /* end extern "C" */
 #endif
@@ -416,6 +436,7 @@ FN_DECLSPEC LFX_RESULT STDCALL LFX_GetVersion(char* const, const unsigned int);
 #define LFX_DLL_ACTIONCOLOREX "LFX_ActionColorEx"
 #define LFX_DLL_SETTIMING "LFX_SetTiming"
 #define LFX_DLL_GETVERSION "LFX_GetVersion"
+#define LFX_DLL_SETTIMING "LFX_SetActionDuration"
 
 // LightFX 2.0 function pointer declarations
 typedef LFX_RESULT (*LFX2INITIALIZE)();
@@ -437,3 +458,4 @@ typedef LFX_RESULT (*LFX2ACTIONCOLOR)(const unsigned int, const unsigned int, co
 typedef LFX_RESULT (*LFX2ACTIONCOLOREX)(const unsigned int, const unsigned int, const unsigned int, const unsigned int);
 typedef LFX_RESULT (*LFX2SETTIMING)(const int);
 typedef LFX_RESULT (*LFX2GETVERSION)(char* const, const unsigned int);
+typedef LFX_RESULT (*LFX2SETACTIONDURATION)(const double);

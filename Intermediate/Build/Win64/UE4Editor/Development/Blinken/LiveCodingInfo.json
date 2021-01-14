@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Blinken.cpp.obj": [
+			"AlienFXController.cpp.obj",
+			"BaseController.cpp.obj",
+			"Blinken.cpp.obj",
+			"BlinkenBPLibrary.cpp.obj",
+			"DirectController.cpp.obj"
+		],
+		"Module.Blinken.gen.cpp.obj": [
+			"Blinken.init.gen.cpp.obj",
+			"BlinkenBPLibrary.gen.cpp.obj"
+		]
+	}
+}

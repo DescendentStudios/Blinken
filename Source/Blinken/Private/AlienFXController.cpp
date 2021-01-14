@@ -1,7 +1,8 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
-#include "BlinkenPrivatePCH.h"
 #include "AlienFXController.h"
+#include "BlinkenPrivatePCH.h"
+
 
 /**
 * Holds the singleton pointer
@@ -39,7 +40,7 @@ void FAlienFXController::StartupModule()
 	}
 	else
 	{
-		const FString PluginsDir = FPaths::ConvertRelativePathToFull(FPaths::GamePluginsDir());
+		const FString PluginsDir = FPaths::ConvertRelativePathToFull(FPaths::ProjectPluginsDir());
 		libraryPath = PluginsDir + pluginLibPath + FPlatformProcess::GetBinariesSubdirectory() + TEXT("/");
 	}
 	FPlatformProcess::PushDllDirectory(*libraryPath);
